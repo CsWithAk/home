@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" author="Amit HomePage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="top-bar">
+        <button onclick="alert(getCurrentPage())" class="search-icon"><i class="fa-solid fa-house"></i></button>
+        <i id="refresh" onclick="refreshPage()" class="fa-duotone fa-solid fa-rotate-right"></i>
+        <input id="input-top" type="text" class="main-search" placeholder="Search...">
+        <button id="search-top" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    
+      <div class="content">
+        <div class="image-box">
+            <img id="slideshow" src="images/img1.jpg" alt="Slideshow Image" class="fade-img">
+          </div>
+          
+        <div  class="right-section">
+          <div class="clock-weather">
+            <div class="clock-box">
+              <div id="time">00:00:00</div>
+              <div id="date">Day, DD Month YYYY</div>
+            </div>
+            <div class="weather-container">
+              <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city">
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+              <div class="weather-info" id="weather-info">
+                <img id="weather-icon" src="" alt="">
+                <h1 id="temperature">-- °C</h1>
+                <h2 id="city-name">City Name</h2>
+                <div class="extra">
+                  <p><span id="humidity">--%</span><br>Humidity</p>
+                  <p><span id="wind">-- Km/h</span><br>Wind Speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+    
+          <div class="search-area">
+            <input id="input" type="text" placeholder="Search..." class="small-search">
+            <button id="search" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+    
+          <div class="icon-row">
+            <div class="social-media">
+              <a id="circle" href="https://whatsapp.com/channel/0029ValAaYT7z4kfo9H56m1K" target="_blank" class="whatsapp" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://linkedin.com/in/amit0prajapati0" target="_blank" class="linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/CsWithAk" target="_blank" class="github" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a id="circle" href="https://www.youtube.com/@CsWithAk" target="_blank" class="youtube" aria-label="WhatsApp">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://x.com/CsWithAk" target="_blank" class="twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/cswithak" target="_blank" class="instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://facebook.com/CsWithAk" target="_blank" class="facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+  <div class="copyright">
+    <p>&copy; 2025 | <a href="">Coder Sena</a> | All Rights Reserved.</p>
+  </div>
+</footer>
+</html>
+
+
