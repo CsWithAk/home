@@ -37,13 +37,15 @@ body {
 }
 
 .content {
+  max-width: 1200px;
   display: flex;
-  padding: 20px;
-  gap: 20px;
+  padding: 10px;/*
+  gap: 20px;*/
 }
 
-.image-box {
-  width: 35%;
+.image-box {/*
+  width: 440px;*/
+  width: auto;
   background: #d0d5d6;
   border: 1px solid #09c0f8;
   border-radius: 50px;
@@ -68,21 +70,21 @@ body {
 
 .right-section {
   flex-grow: 1;
-  width: 40%;
+  width: 740px;
 }
 
 .clock-weather{
+  /*max-width: 620px;*/
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 15px;
-
-  padding: 20px;
+  grid-template-columns: 2fr 1fr;/*
+  gap: 10px;*/
   align-items: center;
-  margin: 15px;
+  padding: 20px;/*
+  margin: 15px;*/
 }
  
 .clock-box {
-  width: 40%;
+  width: 340px;
   height: 120px;
   font-family: 'Courier New', monospace;
   background: #adeaf7;
@@ -90,8 +92,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 15px #00ffc3;
   border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin: 30px;
   text-align: center;
   width: fit-content;
 }
@@ -113,8 +115,9 @@ body {
   padding: 20px;
   text-align: center;
   color: rgb(10, 10, 10);
-  width: 280px;
+  width: 400px;
   box-shadow: 0 0 15px #00ffc3;
+  width: fit-content;
 }
 
 .search-box {
@@ -166,7 +169,7 @@ body {
 .search-area {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .small-search {
@@ -310,4 +313,70 @@ body {
   margin: 0;
   padding: 15px;
   color: #000;
+}
+
+
+
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image-box {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .fade-img {
+    border-radius: 20px;
+  }
+
+  .right-section {
+    width: 100%;
+  }
+
+  .clock-weather {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .clock-box {
+    width: 100%;
+    margin: 0 auto 20px auto;
+  }
+
+  .weather-container {
+    width: 100%;
+  }
+
+  .search-area {
+    flex-direction: column;
+  }
+
+  .icon-row {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .social-media {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .social-media a {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+  }
 }
